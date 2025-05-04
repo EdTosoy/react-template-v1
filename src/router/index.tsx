@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Login } from '../pages/Login/Login';
+import Login from '../pages/Login/Login';
+import MainLayout from '../components/Layout/MainLayout';
+import Dashboard from '../pages/Dashboard/Dashboard';
 
 const AppRouter: React.FC = () => {
   return (
@@ -8,9 +10,9 @@ const AppRouter: React.FC = () => {
       <Routes>
         {/* Main Routes */}
         <Route path="/" element={<Login />} />
-        {/* <Route path="/dashboard" element={<MainLayout />}>
+        <Route path="/dashboard" element={<MainLayout />}>
           <Route path="index" element={<Dashboard />} />
-        </Route> */}
+        </Route>
 
         {/* Fallback Route */}
         {/* <Route path="*" element={<PageNotFound />} /> */}

@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../constants';
 import { loginContainerStyles } from './Login.styles';
 
-export const Login = () => {
+export default function Login() {
   const {
     register,
     handleSubmit,
@@ -32,7 +32,7 @@ export const Login = () => {
   return (
     <Box css={loginContainerStyles}>
       <Typography variant="h4" gutterBottom>
-        Login
+        Daily Task Tracker
       </Typography>
       <Box
         component="form"
@@ -69,4 +69,4 @@ export const Login = () => {
       </Box>
     </Box>
   );
-};
+}
